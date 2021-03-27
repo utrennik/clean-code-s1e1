@@ -26,12 +26,12 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.add_task__input {
+.add-task__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
-.add_task__form {
+.add-task__form {
   display: flex;
 }
 ul {
