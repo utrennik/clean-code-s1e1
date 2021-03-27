@@ -45,6 +45,7 @@ body {
 }
 .add-task__form {
   display: flex;
+  align-items: center;
 }
 .todo-tasks,
 .completed-tasks {

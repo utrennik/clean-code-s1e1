@@ -21,7 +21,7 @@ var createNewTaskElement=function(taskString){
     listItem.className = "todo-tasks__task task-item";
     //input (checkbox)
     var checkBox = document.createElement("input");//checkbx
-    checkBox.className = "task-tiem__checkbox";
+    checkBox.className = "task-item__checkbox";
     //label
     var label = document.createElement("label");//label
     label.className = "task-item__label";
@@ -33,6 +33,7 @@ var createNewTaskElement=function(taskString){
     //button.delete
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
+    deleteButtonImg.className="delete-btn__img"
 
     label.innerText=taskString;
     label.className='task-item__label';
