@@ -1,3 +1,4 @@
+/* default styles reset */
 input,
 button,
 button:active,
@@ -6,9 +7,10 @@ button:focus {
   box-shadow: none !important;
 }
 label,
-input{
+input {
   margin: 0;
 }
+
 /* Basic Style */
 .body {
   background-color: #f8f8f8;
@@ -27,7 +29,6 @@ input{
 .matrix .matrix__details {
   font-family: fantasy, cursive;
 }
-
 @media (max-width:768px) {
   .matrix {
     text-align: center;
@@ -67,6 +68,7 @@ input{
 .btn:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .title {
   color: #333;
@@ -100,8 +102,6 @@ input{
   display: block;
   margin: 0 0 20px;
 }
-
-
 .add-task__input {
   width: 318px;
 }
@@ -114,7 +114,6 @@ input{
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,7 +121,6 @@ input{
 .task-item {
   vertical-align: middle;
 }
-
 .task-item > .task-item__checkbox {
   margin: 0 10px;
 }
@@ -157,12 +155,10 @@ input{
 .task-item__input {
   display: none;
 }
-
-.task-item-editmode .task-item__input {
+.task-item-edit .task-item__input {
   display: inline-block;
   width: 224px;
 }
-
-.task-item-editmode .task-item__label {
+.task-item-edit .task-item__label {
   display: none;
 }

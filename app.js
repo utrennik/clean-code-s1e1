@@ -88,7 +88,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit-btn");
-    var containsClass=listItem.classList.contains("task-item-editmode");
+    var containsClass=listItem.classList.contains("task-item-edit");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -102,7 +102,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("task-item-editmode");
+    listItem.classList.toggle("task-item-edit");
 };
 
 
@@ -125,7 +125,7 @@ var taskCompleted=function(){
     //Append the task list item to the #completed-tasks
     var listItem = this.parentNode;
     console.log(listItem.className)
-    listItem.classList.contains("task-item-editmode") ? listItem.className = "completed-tasks__task task-item task-item-editmode" :
+    listItem.classList.contains("task-item-edit") ? listItem.className = "completed-tasks__task task-item task-item-edit" :
     listItem.className = "completed-tasks__task task-item";
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
@@ -139,7 +139,7 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem = this.parentNode;
-    listItem.classList.contains("task-item-editmode") ? listItem.className = "todo-tasks__task task-item task-item-editmode" :
+    listItem.classList.contains("task-item-edit") ? listItem.className = "todo-tasks__task task-item task-item-edit" :
     listItem.className = "todo-tasks__task task-item";
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
